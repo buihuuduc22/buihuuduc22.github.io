@@ -1,0 +1,345 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+body {
+    background-color: #dddddd;
+}
+
+#container {
+    width: 85%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+section {
+    border: none;
+    padding: 5px 2em;
+}
+
+h2 {
+    border-bottom: 1px solid;
+    margin-bottom: 1em;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 2px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+h2 input {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 2px 0;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+.block {
+    border-bottom: 2px solid rgba(216, 214, 214, 0.623);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+/* menu bar */
+#menu-bar {
+    background-color: gray;
+    overflow: auto;
+    padding: 10px 0;
+}
+ul{
+    width: 85%;
+    margin: 0 auto;
+    color: whitesmoke;
+    font-size: 20px;
+}
+ul>li {
+    text-align: center;
+    padding: 10px 1em;
+    display:block;
+    float: right;
+    cursor: pointer;
+}
+ul>li:hover {
+    background-color: green;
+}
+
+/* contact information */
+/* avatar */
+#avatar {
+    width: 30%;
+    display: inline-block;
+    margin: 0;
+}
+
+#avatar-icon {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    padding-top: 35%;
+}
+
+#avatar-icon>img {
+    width: 100%;
+    height: 100%;
+}
+
+#avatar>div {
+    margin: 15px auto;
+    height: 60mm;
+    width: 40mm;
+    background-color: rgba(209, 200, 200, 0.815);
+    cursor: pointer;
+}
+
+/* popup box input avatar */
+.input-dialog {
+    display: none;
+    position: absolute;
+    width: 50%;
+    padding: 1em;
+    border: 1px solid white;
+    left: 25%;
+    top: 10%;
+    background-color: rgba(209, 200, 200, 0.815);
+}
+#ava-image {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    width: 3cm;
+    height: auto;
+    border: 1px solid;
+    margin-bottom: 1em;
+}
+#input-image {
+    display: none;
+}
+label {
+    cursor: pointer;
+    width: 30%;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    background: green; 
+    display: block;
+    color: #fff;
+    border-radius: 10px;
+}
+label:hover{
+    background-color: red;
+}
+.input-dialog button {
+    float: right;
+    margin: 10px;
+    padding: 10px;
+    background-color: green;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+/* contact form */
+.save-down>button {
+    display: none;
+    float: right;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: green;
+    color: whitesmoke;
+    cursor: pointer;
+
+}
+
+#info {
+    vertical-align: top;
+    width: 69%;
+    display: inline-block;
+}
+
+b {
+    display: inline-block;
+    width: 30%;
+}
+
+#info>div {
+    margin: 15px 0;
+}
+
+#name, #position {
+    color: #0e2452;
+    width: 80%;
+    font-size: 20px;
+}
+
+#name {
+    font-size: 30px;
+    font-weight: bold;
+}
+/* validate text */
+#info>div>span {
+    display: none;
+    padding: 3px;
+    background-color: red;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+/* Objective section */
+.heading, .content {
+    display: block;
+    width: 100%;
+}
+
+/* education and work exprience section */
+.time {
+    vertical-align: top;
+    width: 25%;
+    display: inline-block;
+}
+
+.event {
+    width: 60%;
+    display: inline-block;
+}
+
+.event input {
+    display: block;
+    width: 100%;
+}
+
+/* skill block */
+#skill .block {
+    width: 100%;
+}
+
+.skill-name {
+    width: 25%;
+}
+
+.skill-des {
+    width: 60%;
+}
+
+/* project section */
+.proj-name input{
+    font-weight: bold;
+    font-size: 16px;
+}
+.proj-details, td, th {
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    padding-left: 0.5em;
+    width: 30%;
+    text-align: left;
+}
+
+td input, td textarea {
+    padding: 5px 1em;
+    width: 95%;
+    margin: 2px 2px;
+}
+
+/* style menu bar of options */
+.menu {
+    background-color: rgb(212, 196, 196);
+    width: 20%;
+    margin-top: -2em;
+    margin-left: -2em;
+    display: none;
+    border-radius: 0 0 5px 0;
+}
+
+.menu i {
+    padding: 5px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menu i:hover{
+    background-color: green;
+}
+
+.menu button {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: green;
+    font-weight: bold;
+    padding: 5px; 
+    height: 80%;
+    width: 40%;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.menu button:hover {
+    background-color: red;
+}
+
+/* style menu bar of blocks */
+.menu-block {
+    float: right;
+    display: none;
+    width: 5%;
+    background-color: rgb(212, 196, 196);
+    border-radius: 0 0 0 4px;
+}
+
+.menu-block i {
+   float: right;
+   margin: 5px;
+   padding: 1px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-block i:hover {
+    background-color: red;
+}
+
+/* style dialog box */
+#dialog {
+    display: none;
+    background-color: rgba(114, 109, 109, 0.637);
+    width: 40%;
+    bottom: 30%;
+    border: 1px solid whitesmoke;
+    position: fixed;
+    left: 30%;
+}
+
+#dialog > div {
+    font-weight: bold;
+    margin: 1em;
+    padding: 0.5em;
+    border: 1px solid;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#dialog > div:hover{
+    background-color: green;
+}
+
+

@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(0, 121, 191);
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+i {
+    cursor: pointer;
+}
+
+#banner {
+    background-color: rgb(0, 38, 255);
+    color: white;
+    text-align: center;
+    height: 70px;
+}
+
+#banner>h1 {
+    line-height: 70px;
+    height: 100%;
+}
+#input-box {
+    background-color:rgb(202, 194, 194);
+    display: none;
+    width: 30%;
+    position: fixed;
+    left: 35%;
+    z-index: 5;
+}
+textarea {
+    display: block;
+    width: 90%;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+button {
+    color: rgba(255, 255, 255, 0.925);
+    background-color: rgba(30, 255, 0, 0.466);
+    padding: 0.5em 1em;
+    float: right;
+    font-weight: bold;
+    margin-left: 1em;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.btn-submit {
+    margin-right: 5%;
+}
+
+#container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#container> div {
+    background-color: rgba(245, 245, 245, 0.884);
+    width: 30%;
+    display: inline-block;
+    margin-top: 1em;
+    border-radius: 3px;
+    color: #333;
+    height: 500px;
+    vertical-align: top;
+    overflow: auto;
+}
+#to-do, #doing {
+    margin-right: 4.5%;
+}
+
+.heading {
+    box-shadow:  0.5px 0.5px 0.5px 0.5px rgb(184, 180, 180);
+    background: rgb(11, 196, 186);
+    padding: 1em;
+}
+h2 {
+    display: block;
+    color: #333;
+    background: rgba(255, 255, 255, 0.856);
+    overflow: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+    border-radius: 10px 22px 22px 10px;
+    width: 90%;
+    padding-left: 10px;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(117, 115, 115);
+    
+}
+h2>span {
+   position: relative;
+   top: 8px;
+}
+
+h2>i {
+    color: rgb(11, 196, 186);
+    background-color: rgba(255, 255, 255, 0.952);
+    border-radius: 50%;
+    padding: 10px;
+    float: right;
+    box-shadow: 1px 1px 1px 1px rgb(117, 115, 115);
+}
+
+p {
+    display: block;
+    padding: 1em;
+    margin: 1em;
+    width: 90%;
+    border-radius: 5px;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 1px 1px rgb(117, 115, 115);
+}
+
+.heading + p {
+    display: none;
+}
+

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script class="script-file" src="script.js"></script>
+</head>
+
+<body>
+    <div id="menu-bar">
+        <ul>
+            <li id="save-btn">Save</li>
+            <li id="load-btn">Load</li>
+            <li id="down-btn">Download</li>
+            <li id="email-btn">
+                <a href="http://bit.ly/2MlFxDg" target="_blank">Email</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- container -->
+    <div id="container">
+        <!-- contact section -->
+        <section id="contact">
+            <!-- input popup box -->
+            <div class="input-dialog">
+                <label>
+                    <input type="file" id="input-image">
+                    Choose image
+                </label>
+                <img id="ava-image" src="" alt="avatar-image">
+                <p style=" text-align: center; width: 50%; margin: 0 auto;">(3x4 or 4x6)</p>
+                <button id="upload-btn">Update</button>
+                <button id="cancel-btn">Cancel</button>
+            </div>
+            <!-- avatar image -->
+            <div id="avatar">
+                <div>
+                    <i id="avatar-icon">
+                        <img src="https://cdn2.iconfinder.com/data/icons/flat-ui-icons-24-px/24/photo-24-128.png" alt="avatar-image">
+                    </i>
+                </div>
+
+            </div>
+            <!-- information contacts -->
+            <div id="info">
+                <div>
+                    <input id="name" value="Bui Huu Duc" type="text" placeholder="Full Name">
+                    <span>Name not empty</span>
+                </div>
+                <div>
+                    <input id="position" value="Fresher Java" type="text" placeholder="Position you want">
+                </div>
+                <div>
+                    <b>Date of birth:</b>
+                    <input id="date" value="August 01, 1993" type="text" placeholder="Date of birth">
+                </div>
+                <div>
+                    <b>Gender:</b>
+                    <input id="gender" value="Male" type="text" placeholder="Gender">
+                </div>
+                <div>
+                    <b>Phone:</b>
+                    <input id="phone" value="0123456789" type="text" placeholder="Phone number">
+                    <span>Phone number not empty</span>
+                </div>
+                <div>
+                    <b>Email:</b>
+                    <input value="duc@gmail.com" id="email" type="text" placeholder="Email">
+                    <span>Email not empty</span>
+                </div>
+                <div>
+                    <b>Address:</b>
+                    <input id="address" value="Hanoi, Vietnam" type="text" placeholder="Address">
+                    <span>Address not empty</span>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- set dialog show sections -->
+        <div id="dialog">
+            <div class="obj-op">OBJECTIVE</div>
+            <div class="edu-op">EDUCATION</div>
+            <div class="exp-op">WORK EXPERIENCE</div>
+            <div class="ski-op">SKILLS</div>
+            <div class="int-op">INTERESTS</div>
+            <div class="pro-op">PROJECTS</div>
+        </div>
+        <div class="profile">
+            <!-- Objective section-->
+            <section id="objective" class="option">
+                <!-- menu -->
+                <div class="menu">
+                    <i class="fas fa-plus menu-icon"></i>
+                    <i class="fas fa-caret-up move-up"></i>
+                    <i class="fas fa-caret-down move-down"></i>
+                    <button class="hide-btn">Hide</button>
+                </div>
+                <!-- title -->
+                <h2>
+                    <input type="text" class="title" value="OBJECTIVE" placeholder="BLOCK'S TITTLE">
+                </h2>
+                <textarea class="content" rows="1" cols="30" placeholder="Your carrer's objective"></textarea>
+            </section>
+
+            <!-- education section -->
+            <section id="education" class="option">
+                <!-- menu -->
+                <div class="menu">
+                    <i class="fas fa-plus menu-icon"></i>
+                    <i class="fas fa-caret-up move-up"></i>
+                    <i class="fas fa-caret-down move-down"></i>
+                    <button class="hide-btn">Hide</button>
+                </div>
+                <!-- title -->
+                <h2>
+                    <input type="text" class="title" placeholder="BLOCK'S TITTLE" value="EDUCATION">
+                </h2>
+                <div class="block">
+                    <!-- menu bar of block -->
+                    <div class="menu-block">
+                        <i class="fas fa-plus plus"></i>
+                        <i class="far fa-trash-alt trash"></i>
+                    </div>
+                    <!-- content block -->
+                    <div class="time">
+                        <input size="1" maxlength="4" type="text" placeholder="from" value="2017"> - &nbsp;
+                        <input size="7" maxlength="7" type="text" placeholder="to" value="present">
+                    </div>
+                    <div class="event" style="clear: both;">
+                        <input type="text" placeholder="School or University" value="FUNiX Online University">
+                        <input type="text" placeholder="Degree and field of study" value="Major: Software engineering">
+                        <input type="text" placeholder="Write main subject, or profile in your school" value="Web development">
+                    </div>
+                </div>
+            </section>
+
+            <!-- work exprience section -->
+            <section id="exprience" class="option">
+                <!-- menu -->
+                <div class="menu">
+                    <i class="fas fa-plus menu-icon"></i>
+                    <i class="fas fa-caret-up move-up"></i>
+                    <i class="fas fa-caret-down move-down"></i>
+                    <button class="hide-btn">Hide</button>
+                </div>
+                <!-- title -->
+                <h2>
+                    <input type="text" class="title" placeholder="BLOCK'S TITTLE" value="WORK EXPERIENCE">
+                </h2>
+                <div class="block">
+                    <!-- menu bar of block -->
+                    <div class="menu-block">
+                        <i class="fas fa-plus plus"></i>
+                        <i class="far fa-trash-alt trash"></i>
+                    </div>
+                    <!-- content block -->
+                    <div class="time">
+                        <input size="1" maxlength="4" type="text" placeholder="from" value="2017"> - &nbsp;
+                        <input size="7" maxlength="7" type="text" placeholder="to" value="present">
+                    </div>
+                    <div class="event">
+                        <input type="text" placeholder="School or University" value="FUNiX Online University">
+                        <input type="text" placeholder="Degree and field of study" value="Major: Software engineering">
+                        <input type="text" placeholder="Write main subject, or profile in your school" value="Web development">
+                    </div>
+                </div>
+            </section>
+
+            <!-- skill section -->
+            <section id="skill" class="option">
+                <!-- menu -->
+                <div class="menu">
+                    <i class="fas fa-plus menu-icon"></i>
+                    <i class="fas fa-caret-up move-up"></i>
+                    <i class="fas fa-caret-down move-down"></i>
+                    <button class="hide-btn">Hide</button>
+                </div>
+                <!-- title -->
+                <h2>
+                    <input type="text" class="title" value="SKILLS" placeholder="BLOCK'S TITTLE">
+                </h2>
+                <div class="block">
+                    <!-- menu bar of block -->
+                    <div class="menu-block">
+                        <i class="fas fa-plus plus"></i>
+                        <i class="far fa-trash-alt trash"></i>
+                    </div>
+                    <input type="text" class="skill-name" placeholder="Skill Group Name" value="Programing">
+                    <textarea class="skill-des" cols="30" rows="1" placeholder="Skill Description">Java Core</textarea>
+                </div>
+                <div class="block">
+                    <!-- menu bar of block -->
+                    <div class="menu-block">
+                        <i class="fas fa-plus plus"></i>
+                        <i class="far fa-trash-alt trash"></i>
+                    </div>
+                    <input type="text" class="skill-name" placeholder="Skill Group Name" value="Language">
+                    <textarea class="skill-des" cols="30" rows="1" placeholder="Skill Description">English</textarea>
+                </div>
+            </section>
+
+            <!-- interest section -->
+            <section id="interest" class="option">
+                <!-- menu -->
+                <div class="menu">
+                    <i class="fas fa-plus menu-icon"></i>
+                    <i class="fas fa-caret-up move-up"></i>
+                    <i class="fas fa-caret-down move-down"></i>
+                    <button class="hide-btn">Hide</button>
+                </div>
+                <!-- title -->
+                <h2>
+                    <input type="text" class="title" value="INTERESTS" placeholder="BLOCK'S TITTLE">
+                </h2>
+                <textarea class="content" cols="30" rows="1" placeholder="I like music, game, etc">I like music, game, etc</textarea>
+            </section>
+
+            <!-- project section -->
+            <section id="project" class="option">
+                <!-- menu -->
+                <div class="menu">
+                    <i class="fas fa-plus menu-icon"></i>
+                    <i class="fas fa-caret-up move-up"></i>
+                    <i class="fas fa-caret-down move-down"></i>
+                    <button class="hide-btn">Hide</button>
+                </div>
+                <!-- title -->
+                <h2>
+                    <input type="text" class="title" value="PROJECTS" placeholder="BLOCK'S TITTLE">
+                </h2>
+                <div class="block">
+                    <!-- menu bar of block -->
+                    <div class="menu-block">
+                        <i class="fas fa-plus plus"></i>
+                        <i class="far fa-trash-alt trash"></i>
+                    </div>
+                    <!-- project name -->
+                    <h3 class="proj-name">
+                        <input type="text" placeholder="Project's ame" value="Project 1">
+                    </h3>
+                    <!-- project time -->
+                    <p class="proj-time" style="margin-bottom: 5px">
+                        Time:
+                        <input size="1" maxlength="4" type="text" placeholder="from" value="2017"> - &nbsp;
+                        <input size="7" maxlength="7" type="text" placeholder="to" value="present">
+                    </p>
+                    <!-- table description project -->
+                    <table class="proj-details">
+                        <tr>
+                            <th>Customer</th>
+                            <td>
+                                <input type="text" placeholder="Customer" value="Funix">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Description</th>
+                            <td>
+                                <textarea rows="1" placeholder="Description">Description</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Team size</th>
+                            <td>
+                                <input type="text" placeholder="Team size" value="1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>My position</th>
+                            <td>
+                                <input type="text" placeholder="My position" value="Devepoper">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>My responsibilities</th>
+                            <td>
+                                <textarea cols="30" rows="1" placeholder="My responsibilities">Developmet</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Technologies used</th>
+                            <td>
+                                <textarea cols="30" rows="1" placeholder="Technologies used">Javascript</textarea>
+
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

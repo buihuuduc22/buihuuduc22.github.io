@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"crossorigin="anonymous">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="banner">
+        <h1>TO DO LIST</h1>
+    </div>
+    <div id="input-box">
+        <textarea id="input" cols="30" rows="10" placeholder="Enter Task"></textarea>
+        <button class="btn-submit">OK</button>
+        <button id="btn-cancle" onclick="hideBox()">Cancel</button>
+    </div>
+    <div id="container">
+        <div id="to-do" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <div class="heading">
+                <h2>
+                    <span>To Do</span>
+                    <i id="to-do-icon" class="fas fa-plus" onclick="dispInputBox(this)"></i>
+                </h2>
+            </div>
+            <p class="card" draggable="true" ondragstart="drag(event)">
+                <i class="fas fa-trash-alt trash" onclick="delCard(this)" 
+                style="float: right; margin-left: 1em;"></i>
+                <i class="fas fa-user-edit edit" onclick="editCard(this)" 
+                style="float:right"></i>
+                <span></span>
+            </p>
+        </div>
+
+        <div id="doing" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <div class="heading">
+                <h2>
+                    <span>Doing</span>
+                    <i id="doing-icon" class="fas fa-plus" onclick="dispInputBox(this)"></i>
+                </h2>
+            </div>
+            <p></p>
+        </div>
+
+        <div id="done" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <div class="heading">
+                <h2>
+                    <span>Done</span>
+                    <i id="done-icon" class="fas fa-plus" onclick="dispInputBox(this)"></i>
+                </h2>
+            </div>
+            <p></p>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
