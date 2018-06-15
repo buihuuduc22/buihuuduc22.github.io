@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    background-color: rgb(0, 121, 191);
+    background-color: gray;
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 i {
@@ -12,8 +12,8 @@ i {
 }
 
 #banner {
-    background-color: rgb(0, 38, 255);
-    color: white;
+    background-color: green;
+    color: whitesmoke;
     text-align: center;
     height: 70px;
 }
@@ -36,10 +36,11 @@ textarea {
     font-size: 20px;
     margin: 0 auto;
     margin-top: 1em;
+    resize: none;
 }
 button {
-    color: rgba(255, 255, 255, 0.925);
-    background-color: rgba(30, 255, 0, 0.466);
+    color: whitesmoke;
+    background-color: green;
     padding: 0.5em 1em;
     float: right;
     font-weight: bold;
@@ -74,7 +75,7 @@ button {
 
 .heading {
     box-shadow:  0.5px 0.5px 0.5px 0.5px rgb(184, 180, 180);
-    background: rgb(11, 196, 186);
+    background: green;
     padding: 1em;
 }
 h2 {
@@ -96,12 +97,15 @@ h2>span {
 }
 
 h2>i {
-    color: rgb(11, 196, 186);
-    background-color: rgba(255, 255, 255, 0.952);
+    color: green;
+    background-color: rgba(255, 255, 255, 0.911);
     border-radius: 50%;
     padding: 10px;
     float: right;
     box-shadow: 1px 1px 1px 1px rgb(117, 115, 115);
+}
+h2>i:hover {
+    background-color: rgb(202, 198, 198);
 }
 
 p {
